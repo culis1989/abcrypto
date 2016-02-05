@@ -7,6 +7,11 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php wp_head(); ?>
+  <?php
+  function replace($raw_phone){
+    return str_replace(array("/","-","(",")"," "), "", $raw_phone);
+  }
+   ?>
 </head>
 <body>
   <header>
