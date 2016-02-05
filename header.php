@@ -13,7 +13,7 @@
   }
    ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
     <div class="wrapper">
       <div class="pull-left">

@@ -80,7 +80,7 @@ table {
 .fluid .grid1 { width: 6.382978723%; *width: 6.329787233638298%; }
 
 .wrapper{
-  max-width: 1180px;
+  max-width: 980px;
   margin: 0 auto;
 }
 .pull-left{
@@ -99,10 +99,18 @@ body{
   font-size: 14px;
   line-height: 20px;
 }
+h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 32px;
+}
 h3{
   font-size: 26px;
   line-height: 26px;
   margin-bottom: 22px;
+}
+p{
+	margin-bottom: 22px;
 }
 header,
 footer{
@@ -126,19 +134,26 @@ nav ul{
 nav ul li,
 nav ul li a,
 a.logo{
-  line-height: 70px;
-  display: inline-block;
+	line-height: 36px;
+	display: inline-block;
 }
 nav ul li a{
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0 10px;
-  margin: 0 2px;
-  color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px;
+	margin: 10px 2px;
+	color: #000;
+	border: 1px solid transparent;
 }
 nav ul li a:hover{
-  background-color: black;
-  color: white;
+	border-color: #7D7D7D;
+}
+header .current-menu-item a,
+header .current_page_item a{
+	opacity: 0.4;
+	pointer-events: none;
+	cursor: default;
+	border: 1px solid #7D7D7D;
 }
 .bottom{
   background-color: #757575;
@@ -187,4 +202,42 @@ a.p2g{
 }
 a.p2g:hover{
 	color: white;
+}
+section.lead{
+	text-align: center;
+}
+section.lead h1{
+	margin-bottom: 48px;
+}
+section.lead h1:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	left: calc(50% - 30px);
+	margin-top: 24px;
+}
+hr{
+	height: 1px;
+	border: none;
+	background-color: #EAEAEA;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+body.category #content li{
+	padding-top: 22px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #ececec;
+}
+body.category #content li a{
+	text-decoration: none;
+	color: black;
+}
+#content a.button{
+	border: 1px solid rgba(0,0,0,0.4);
+	line-height: 30px;
+	padding: 0 10px;
+	display: inline-block;
 }
