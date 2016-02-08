@@ -1,5 +1,23 @@
 <?php
   get_header();
+
+  $cat_name = single_cat_title('', false);
+  $cat_description = category_description();
+  $queried_object = get_queried_object();
+  $taxonomy = $queried_object->taxonomy;
+  $term_id = $queried_object->term_id;
+  $image = get_field('image', $taxonomy . '_' . $term_id);
+
+  echo '<div class="lead_header" style="background-image:url('.$image.')">';
+    echo '<div class="lead_cover">';
+      echo '<div class="wrapper">';
+          echo '<h1>'.$cat_name.'</h1>';
+          echo $cat_description;
+        echo '</div>';
+    echo '</div>';
+  echo '</div>';
+
+  echo '<div class="wrapper" id="content">';
   if ( have_posts() ) {
     echo '<ul>';
   	while ( have_posts() ) {

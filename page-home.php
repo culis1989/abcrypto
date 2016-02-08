@@ -3,6 +3,7 @@
  * Template Name: Home Page
  */
   get_header();
+  echo '<div class="wrapper" id="content">';
   $title = get_field('lead_title');
   $text = get_field('lead_text');
 

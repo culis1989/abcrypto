@@ -27,4 +27,3 @@
       <div class="clear"></div>
     </div>
   </header>
-  <div class="wrapper" id="content">
