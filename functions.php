@@ -63,6 +63,15 @@ function theme_slug_widgets_init() {
         'before_title'  => '<h3 class="widgettitle">',
         'after_title'   => '</h3>',
     ));
+    register_sidebar( array(
+        'name' => __( 'Sidebar', 'abcrypto' ),
+        'id' => 'sidebar',
+        'description' => __( 'Sidebar', 'abcrypto' ),
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ));
 }
 
 /*** INCLUDE OPTION TREE ***/
@@ -72,3 +81,6 @@ require_once ('plugins/option-tree/ot-loader.php');
 
 /*** INCLUDE ACF ****/
 include_once( get_stylesheet_directory() . '/plugins/advanced-custom-fields/acf.php' );
+
+/*** ADD POST THUMBNAIL ****/
+add_theme_support( 'post-thumbnails' );

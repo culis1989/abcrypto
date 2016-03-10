@@ -17,7 +17,7 @@
   <header>
     <div class="wrapper">
       <div class="pull-left">
-        <a class="logo" href="/">ABCrypto.com</a>
+        <a class="logo" href="/">AB<span>Crypto</span></a>
       </div>
       <div class="pull-right">
         <nav>
