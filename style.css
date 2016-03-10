@@ -92,6 +92,10 @@ table {
 .clear{
   clear: both;
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
 body{
   font-family: 'Open Sans', sans-serif;
 	font-family: 'Roboto', sans-serif;
@@ -218,13 +222,19 @@ section.lead{
 }
 section.lead h1{
 	margin-bottom: 48px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+section.lead p{
+	font-size: 16px;
+	line-height: 22px;
 }
 section.lead h1:after{
 	content: "";
 	display: block;
 	width: 60px;
 	height: 1px;
-	background-color: black;
+	background-color: rgba(255,255,255,0.7);
 	position: absolute;
 	left: calc(50% - 30px);
 	margin-top: 24px;
@@ -236,19 +246,27 @@ hr{
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
-body.category #content .grid9 li{
+body #content .grid9 ul.category li,
+body .as_content .grid9 ul.category li{
 	padding-top: 22px;
 	padding-bottom: 22px;
 	border-bottom: 1px solid #ececec;
 }
-body.category #content li a{
+body #content ul.category li a,
+body .as_content ul.category li a,
+body .tags a,
+.widget li a,
+body a.button{
 	text-decoration: none;
 	color: black;
 }
-body.category #content h3{
+body #content ul.category li a.button{
+	float: right;
+}
+body #content ul.category h3{
 	margin-bottom: 0;
 }
-body.category #content ul li p{
+body #content ul.category li p{
 	margin-top: 22px;
 }
 .tags{
@@ -257,22 +275,26 @@ body.category #content ul li p{
 .tags a:hover{
 	color: #E67900 !important;
 }
-#content a.button{
+#content a.button,
+.as_content a.button{
 	border: 1px solid rgba(0,0,0,0.4);
 	line-height: 30px;
 	padding: 0 10px;
 	display: inline-block;
 }
-#content a.button:hover{
+#content a.button:hover,
+.as_content a.button:hover{
 	background-color: rgba(0,0,0,0.5);
 	border-color: #808080;
 	color: white;
 }
-#content a.button.orange:hover{
+#content a.button.orange:hover,
+.as_content a.button.orange:hover{
 	background-color: rgb(255, 137, 51);
 	border-color: #FF8933;
 }
-.date{
+ul.category .date,
+.single-post .date{
 	margin-top: 6px;
 }
 .lead_header{
@@ -309,6 +331,7 @@ body.category #content ul li p{
 	background-color: rgba(0,0,0,0.6);
 	width: 100%;
 	height: 100%;
+	color: white;
 }
 ul.category li img{
 	max-width: 100%;
@@ -378,4 +401,78 @@ aside .widget ul li a:hover{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+}
+.breadcrumbs{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ececec;
+}
+.breadcrumbs span{
+	color: #B7B5B5;
+	text-decoration: none;
+}
+.breadcrumbs a{
+	text-decoration: none;
+}
+.breadcrumbs a span{
+	color: #000;
+}
+.breadcrumbs i{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.wrapper.single-post h1{
+	margin-bottom: 0;
+}
+.wrapper.single-post .tags{
+	margin-bottom: 4px;
+}
+.wrapper.single-post .date{
+	margin-bottom: 22px;
+}
+img.single-post-featured{
+	float: left;
+	display: inline-block;
+	max-width: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+  border: 2px solid #77726E;
+}
+section.home-box{
+	padding: 80px 0;
+	background-color: #F8F8F8;
+	color: black;
+	text-align: center;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+}
+section.home-box h2{
+	font-size: 28px;
+	line-height: 28px;
+	margin-bottom: 36px;
+}
+section.home-box h2:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 1px;
+	background-color: rgba(0,0,0,0.7);
+	margin-top: 20px;
+	left: calc(50% - 25px);
+}
+a.button.white{
+	color: white;
+	border-color: white;
+}
+a.button.white:hover{
+	background-color: white;
+	border-color: white;
+	color:  #FF8933;
+}
+.page-template-page-home-php #content{
+
+}
+.page-template-page-home-php .breadcrumbs{
+	display: none;
 }

@@ -8,14 +8,6 @@
   $term_id = $queried_object->term_id;
   $image = get_field('image', $taxonomy . '_' . $term_id);
 
-  echo '<div class="lead_header" style="background-image:url('.$image.')">';
-    echo '<div class="lead_cover">';
-      echo '<div class="wrapper">';
-          echo '<h1>'.$cat_name.'</h1>';
-          echo $cat_description;
-        echo '</div>';
-    echo '</div>';
-  echo '</div>';
 
   echo '<div class="wrapper" id="content">';
   echo '<div class="fluid">';
@@ -59,6 +51,7 @@
 
         echo '<p>'.$excerpt.'</p>';
         echo '<a class="button orange" href="'.$link.'">READ MORE</a>';
+        echo '<div class="clear"></div>';
         echo '</div>';
         echo '</div>';
       echo '</li>';

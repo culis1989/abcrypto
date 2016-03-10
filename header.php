@@ -17,7 +17,7 @@
   <header>
     <div class="wrapper">
       <div class="pull-left">
-        <a class="logo" href="/">AB<span>Crypto</span></a>
+        <a class="logo" href="/"><i class="fa fa-lock"></i> AB<span>Crypto</span></a>
       </div>
       <div class="pull-right">
         <nav>
@@ -27,3 +27,10 @@
       <div class="clear"></div>
     </div>
   </header>
+  <div class="breadcrumbs">
+    <div class="wrapper">
+    <?php if(function_exists('bcn_display')){
+      bcn_display();
+    }?>
+    </div>
+  </div>
