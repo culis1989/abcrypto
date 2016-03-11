@@ -1,9 +1,9 @@
 /*
 Theme Name: ABCrypto
 Theme URI: http://pixel2go.com
-Author: Filip Kunjadić - Ćulibrk (PIXEL2GO)
+Author: Filip Kunjadic - Culibrk (PIXEL2GO)
 Author URI: http://pixel2go.com
-Description: Insert description later plz.
+Description: Custom WordPress theme developed for ABCrypto company.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -377,6 +377,9 @@ aside .widget ul li a:hover{
 }
 #searchform input,
 #searchform button{
+     -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
 	float: left;
 	height: 36px;
 }
@@ -405,6 +408,7 @@ aside .widget ul li a:hover{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+        text-align:center;
 }
 .breadcrumbs{
 	height: 40px;
@@ -516,6 +520,9 @@ a.button.white:hover{
 }
 .wpcf7 input,
 .wpcf7 textarea{
+     -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
   font-weight:300;
   font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
