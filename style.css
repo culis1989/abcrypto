@@ -516,6 +516,7 @@ a.button.white:hover{
 }
 .wpcf7 input,
 .wpcf7 textarea{
+  font-weight:300;
   font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	box-sizing: border-box;
