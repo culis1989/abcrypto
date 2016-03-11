@@ -61,6 +61,7 @@
   echo '</div>';
   echo '<aside class="grid3">';
     get_sidebar();
+  echo '</aside>';
   echo '</div>';
   echo '</div>';
   get_footer();

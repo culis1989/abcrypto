@@ -56,6 +56,21 @@ if ( function_exists( 'ot_get_option' ) ) {
       <div class="clear"></div>
     </div>
   </div>
+  <script>
+  function mobile_nav(){
+    $("#menu_trigger").click(function() {
+        console.log('test');
+        $width = $(window).width();
+        if($width<800){
+            $("header nav ul").toggle();
+        }
+    });
+  }
+  $(document).ready(function() {
+       mobile_nav();
+   });
+
+  </script>
 <?php wp_footer(); ?>
 </body>
 </html>
